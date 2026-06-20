@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>FFuture.IA — Construindo o futuro através da Inteligência Artificial</title>
+  <meta name="description" content="A FFuture.IA é parceira estratégica de empresas em crescimento: automação, dados e inteligência artificial para gerar impacto real. Nosso método: Forge, Focus, Forward." />
+  <meta name="author" content="FFuture.IA" />
+  <meta name="keywords" content="inteligência artificial, automação de processos, integração de sistemas, transformação digital, parceria estratégica, dashboards, BI, FFuture.IA" />
+  <meta name="theme-color" content="#060B18" />
+  <!-- PREENCHER: troque "ffuture.ia" pelo seu domínio nas 4 linhas a seguir (canonical, og:url, og:image, twitter:image) -->
+  <link rel="canonical" href="https://ffuture.ia/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="FFuture.IA — Construindo o futuro através da Inteligência Artificial" />
+  <meta property="og:description" content="Parceria estratégica em tecnologia, automação e IA. Nosso método: Forge · Focus · Forward." />
+  <meta property="og:site_name" content="FFuture.IA" />
+  <meta property="og:url" content="https://ffuture.ia/" />
+  <meta property="og:image" content="https://ffuture.ia/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FFuture.IA — Construindo o futuro através da Inteligência Artificial" />
+  <meta name="twitter:description" content="Parceria estratégica em tecnologia, automação e IA." />
+  <meta name="twitter:image" content="https://ffuture.ia/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== ANIMAÇÃO DE ABERTURA (FORGE → FOCUS → FORWARD → FFUTURE.IA) ===== -->
+  <div class="intro" id="intro" role="status" aria-label="Abertura FFuture.IA">
+    <button class="intro__skip" id="introSkip" type="button">Pular</button>
+    <div class="intro__stage" aria-hidden="true">
+      <span class="intro__seq intro__seq--1">FORGE</span>
+      <span class="intro__seq intro__seq--2">FOCUS</span>
+      <span class="intro__seq intro__seq--3">FORWARD</span>
+      <span class="intro__final"><span class="intro__brand">FFUTURE</span><span class="intro__ia">.IA</span></span>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="brand" aria-label="FFuture.IA — início">
+        <span class="brand__logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 2l12 7v14l-12 7L4 23V9l12-7z" stroke="url(#bg)" stroke-width="1.6"/><circle cx="16" cy="16" r="3.4" fill="url(#bg)"/><path d="M16 7v5.2M16 19.8V25M9 11l4.5 2.6M18.5 18.4L23 21M23 11l-4.5 2.6M13.5 18.4L9 21" stroke="url(#bg)" stroke-width="1.2" stroke-linecap="round"/><defs><linearGradient id="bg" x1="4" y1="2" x2="28" y2="30"><stop stop-color="#38BDF8"/><stop offset="1" stop-color="#3B6BFF"/></linearGradient></defs></svg>
+        </span>
+        <span class="brand__name">FFuture<span>.IA</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navegação principal">
+        <a href="#parceria">Parceria</a>
+        <a href="#metodo">Método</a>
+        <a href="#solucoes">O que fazemos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a href="#contato" class="btn btn--primary btn--small nav__cta">Falar com especialista</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Navegação mobile">
+      <a href="#parceria">Parceria</a>
+      <a href="#metodo">Método</a>
+      <a href="#solucoes">O que fazemos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a href="#contato" class="btn btn--primary">Falar com especialista</a>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="netCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <p class="badge reveal">
+          <span class="badge__dot" aria-hidden="true"></span>
+          Parceria estratégica em tecnologia
+        </p>
+
+        <h1 class="hero__title reveal">
+          Construindo o futuro através da
+          <span class="grad">Inteligência Artificial</span>.
+        </h1>
+
+        <p class="hero__lead reveal">
+          A <strong>FFuture.IA</strong> não vende ferramentas: caminhamos junto com empresas em
+          crescimento, usando automação, dados e inteligência artificial para acelerar o
+          crescimento de pessoas e organizações.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#contato" class="btn btn--primary btn--lg">Quero uma conversa</a>
+          <a href="#metodo" class="btn btn--outline btn--lg">Nosso método</a>
+        </div>
+
+        <p class="hero__slogan reveal" aria-label="Forge, Focus, Forward">
+          <span>Forge.</span><span>Focus.</span><span>Forward.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== TRUST STRIP ===== -->
+    <section class="trust" aria-label="Integrações e canais">
+      <div class="container">
+        <!-- PREENCHER: troque os nomes abaixo por LOGOS reais de integração quando houver -->
+        <p class="trust__label">Conecta-se aos canais e sistemas que você já usa <span class="ph">*</span></p>
+        <div class="trust__logos">
+          <span>WhatsApp</span><span>Instagram</span><span>Site / Web</span>
+          <span>CRM</span><span>ERP</span><span>E-mail</span><span>APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARCERIA ESTRATÉGICA (essência da marca) ===== -->
+    <section class="section parceria" id="parceria">
+      <div class="container">
+        <div class="parceria__head reveal">
+          <p class="section__label">Nossa essência</p>
+          <h2 class="parceria__title">Mais que tecnologia: uma <span class="grad">parceria de crescimento</span>.</h2>
+        </div>
+
+        <div class="parceria__body">
+          <p class="parceria__text reveal">
+            A FFuture.IA não se posiciona apenas como uma fornecedora de tecnologia. Buscamos
+            construir relações de longo prazo com empresas que estejam em crescimento e que
+            enxerguem a inovação como uma ferramenta estratégica. Nosso foco está em compreender
+            profundamente os processos, identificar oportunidades e implementar soluções que
+            gerem impacto real.
+          </p>
+
+          <p class="parceria__highlight reveal">
+            Acreditamos em crescimento mútuo: <span class="grad">quando nossos clientes evoluem, nós evoluímos junto com eles.</span>
+          </p>
+
+          <p class="parceria__text reveal">
+            Por isso, priorizamos projetos onde podemos participar da jornada, contribuir para
+            resultados concretos e construir parcerias duradouras através de tecnologia, automação
+            e inteligência artificial.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NOSSO MÉTODO (Forge · Focus · Forward) ===== -->
+    <section class="section metodo" id="metodo">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__label">Nosso método</p>
+          <h2 class="section__title">Uma jornada em três atos: <span class="grad">Forge · Focus · Forward</span></h2>
+          <p class="section__sub">A mesma sequência que abre a nossa marca é o fio que guia cada parceria — do primeiro encontro à evolução contínua.</p>
+        </div>
+
+        <ol class="acts">
+          <li class="act reveal">
+            <span class="act__index">Ato 01</span>
+            <h3 class="act__word">FORGE</h3>
+            <p class="act__pt">Construir</p>
+            <p class="act__desc">Criamos soluções sob medida — tecnologia, automação, integração e dados — moldadas ao seu negócio, e não o contrário.</p>
+          </li>
+          <li class="act reveal">
+            <span class="act__index">Ato 02</span>
+            <h3 class="act__word">FOCUS</h3>
+            <p class="act__pt">Direcionar</p>
+            <p class="act__desc">Mergulhamos no seu processo para encontrar clareza e as oportunidades de maior impacto. Direção antes de esforço.</p>
+          </li>
+          <li class="act reveal">
+            <span class="act__index">Ato 03</span>
+            <h3 class="act__word">FORWARD</h3>
+            <p class="act__pt">Avançar</p>
+            <p class="act__desc">Crescimento mútuo: acompanhamos a jornada e evoluímos junto com você, ciclo após ciclo, sempre um passo à frente.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== O QUE FAZEMOS ===== -->
+    <section class="section solucoes" id="solucoes">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__label">O que fazemos</p>
+          <h2 class="section__title">Tecnologia sob medida para o seu <em>crescimento</em></h2>
+          <p class="section__sub">Entendemos o seu processo e construímos a solução certa — conectada e feita para durar.</p>
+        </div>
+
+        <div class="grid-cards">
+          <article class="scard reveal">
+            <div class="scard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1 0 8v1a4 4 0 0 1-8 0v-1a4 4 0 0 1 0-8V7a4 4 0 0 1 4-4z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg>
+            </div>
+            <h3>Implementação de IA</h3>
+            <p>Inteligência Artificial aplicada ao seu negócio para executar tarefas, analisar informações e apoiar decisões estratégicas.</p>
+            <ul class="scard__list"><li>Implementação de IA</li><li>Assistentes virtuais corporativos</li></ul>
+          </article>
+
+          <article class="scard scard--featured reveal">
+            <div class="scard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Automação de processos</h3>
+            <p>Automatizamos processos empresariais e rotinas operacionais para eliminar tarefas repetitivas e reduzir erros.</p>
+            <ul class="scard__list"><li>Automação de processos empresariais</li><li>Fluxos de trabalho automáticos</li></ul>
+          </article>
+
+          <article class="scard reveal">
+            <div class="scard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M8 7L4 12l4 5M16 7l4 5-4 5M13 5l-2 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Integração entre sistemas</h3>
+            <p>Conectamos as plataformas que você já usa para que tudo converse e os dados fluam em tempo real, sem retrabalho.</p>
+            <ul class="scard__list"><li>Integração entre sistemas</li><li>APIs &amp; conectores</li></ul>
+          </article>
+
+          <article class="scard reveal">
+            <div class="scard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Dashboards &amp; BI</h3>
+            <p>Painéis inteligentes e análise de dados que transformam informação em decisão, com indicadores claros e em tempo real.</p>
+            <ul class="scard__list"><li>Dashboards inteligentes e BI</li><li>Análise de dados</li></ul>
+          </article>
+
+          <article class="scard reveal">
+            <div class="scard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Soluções sob medida</h3>
+            <p>Desenvolvimento de soluções personalizadas para o seu desafio específico, do conceito à entrega.</p>
+            <ul class="scard__list"><li>Desenvolvimento sob medida</li><li>Sistemas integrados</li></ul>
+          </article>
+
+          <article class="scard reveal">
+            <div class="scard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Consultoria em transformação digital</h3>
+            <p>Orientação estratégica para adotar IA e automação com segurança, no ritmo e no contexto da sua empresa.</p>
+            <ul class="scard__list"><li>Estratégia &amp; adoção de IA</li><li>Transformação digital</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEMO / MÍDIA (slot trocável) ===== -->
+    <section class="section demo" id="demo">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__label">Demonstração</p>
+          <h2 class="section__title">Veja a solução em <em>ação</em></h2>
+          <p class="section__sub">Espaço reservado para uma demo — vídeo, GIF ou iframe de um produto, fluxo ou painel funcional.</p>
+        </div>
+
+        <figure class="media reveal">
+          <!-- ===========================================================
+               SLOT DE MÍDIA — fácil de trocar (veja o README).
+               Substitua o placeholder por UMA das opções:
+
+               VÍDEO:  <video class="media__el" src="demo.mp4" poster="demo-poster.jpg" controls playsinline></video>
+               GIF:    <img   class="media__el" src="demo.gif" alt="Demonstração" />
+               IFRAME: <iframe class="media__el" src="https://SEU-LINK" title="Demo" allowfullscreen loading="lazy"></iframe>
+               =========================================================== -->
+          <div class="media__frame" role="img" aria-label="Demonstração em breve">
+            <span class="media__play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5l6 3.5-6 3.5z" fill="currentColor"/></svg>
+            </span>
+            <span class="media__caption">Demo em breve</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE / MISSÃO / VISÃO ===== -->
+    <section class="section sobre" id="sobre">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__label">Quem somos</p>
+          <h2 class="section__title">Inovação, proximidade e <em>visão de futuro</em></h2>
+        </div>
+
+        <div class="sobre__grid">
+          <div class="sobre__text reveal">
+            <p>
+              A <strong>FFuture.IA</strong> é uma empresa focada em transformar processos
+              empresariais através da Inteligência Artificial, automação e integração de sistemas.
+              Desenvolvemos soluções personalizadas que conectam sistemas, automatizam fluxos de
+              trabalho e apoiam decisões estratégicas.
+            </p>
+            <p>
+              Acreditamos que a tecnologia deve <strong>potencializar pessoas</strong>, eliminando
+              atividades repetitivas e permitindo que equipes foquem no que realmente gera valor —
+              sempre com proximidade, confiança e aprendizado contínuo.
+            </p>
+          </div>
+
+          <div class="vcards">
+            <div class="vcard reveal">
+              <div class="vcard__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg>
+              </div>
+              <h3>Missão</h3>
+              <p>Democratizar o acesso à tecnologia avançada, permitindo que empresas de todos os tamanhos utilizem IA para aumentar produtividade, reduzir custos operacionais e acelerar resultados.</p>
+            </div>
+            <div class="vcard reveal">
+              <div class="vcard__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <h3>Visão</h3>
+              <p>Ser referência em inovação e automação inteligente, ajudando empresas a construir o futuro através da tecnologia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SETORES / COM QUEM ===== -->
+    <section class="section setores" id="setores">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__label">Com quem crescemos</p>
+          <h2 class="section__title">Parcerias com empresas de <em>todos os tamanhos</em></h2>
+          <p class="section__sub">Do comércio local à indústria — caminhamos junto, no contexto de cada negócio.</p>
+        </div>
+
+        <div class="setores__grid">
+          <span class="reveal">Comércio &amp; Varejo</span>
+          <span class="reveal">Serviços &amp; Consultorias</span>
+          <span class="reveal">Saúde &amp; Clínicas</span>
+          <span class="reveal">Indústria</span>
+          <span class="reveal">Imobiliárias</span>
+          <span class="reveal">Educação</span>
+          <span class="reveal">Tecnologia &amp; SaaS</span>
+          <span class="reveal">Empresas em crescimento</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section social" id="cta">
+      <div class="container">
+        <p class="brandline reveal"><span>Forge.</span> <span>Focus.</span> <span>Forward.</span></p>
+
+        <div class="bigcta reveal">
+          <h2>Vamos construir o próximo passo da sua empresa, juntos?</h2>
+          <p>Entendemos seus processos, encontramos oportunidades e desenvolvemos a solução com você.</p>
+          <a href="#contato" class="btn btn--primary btn--lg">Falar com especialista</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section contato" id="contato">
+      <div class="container grid-2">
+        <div class="reveal">
+          <p class="section__label">Contato</p>
+          <h2 class="section__title">Vamos crescer<br />juntos.</h2>
+          <p class="contato__lead">Conte seu desafio. Mostramos, na prática, como a FFuture.IA pode ser parceira da sua operação.</p>
+
+          <!-- PREENCHER: e-mail e WhatsApp reais (exemplos abaixo) -->
+          <ul class="contato__list">
+            <li><span class="contato__k">E-mail</span><a href="mailto:contato@ffuture.ia">contato@ffuture.ia <span class="ph">*</span></a></li>
+            <li><span class="contato__k">WhatsApp</span><a href="https://wa.me/5551993706131" target="_blank" rel="noopener">+55 51 99370-6131 <span class="ph">*</span></a></li>
+            <li><span class="contato__k">Atuação</span><span>Porto Alegre · RS · Brasil · Remoto</span></li>
+          </ul>
+          <p class="placeholder-note"><span>placeholder</span> Confirme e-mail, WhatsApp e domínio (ffuture.ia) antes de publicar.</p>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required />
+          </div>
+          <div class="form__row form__row--split">
+            <div>
+              <label for="empresa">Empresa</label>
+              <input type="text" id="empresa" name="empresa" autocomplete="organization" />
+            </div>
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="form__row">
+            <label for="interesse">Interesse</label>
+            <select id="interesse" name="interesse">
+              <option value="Implementação de IA">Implementação de IA</option>
+              <option value="Automação de processos">Automação de processos</option>
+              <option value="Integração de sistemas">Integração de sistemas</option>
+              <option value="Dashboards e BI">Dashboards e BI</option>
+              <option value="Não sei ainda, quero orientação">Não sei ainda, quero orientação</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Enviar</button>
+          <p class="form__hint">Abre o WhatsApp com a mensagem pronta. <span class="ph">Conecte a um backend/Formspree para receber por e-mail.</span></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="#hero" class="brand" aria-label="FFuture.IA">
+          <!-- Mini-animação da marca: ".IA" se encaixa ao entrar na viewport -->
+          <span class="footer__anim" id="footerAnim" aria-hidden="true"><span class="fa__brand">FFUTURE</span><span class="fa__ia">.IA</span></span>
+        </a>
+        <p>Parceria estratégica em tecnologia, automação e Inteligência Artificial para empresas em crescimento.</p>
+        <p class="footer__slogan">Forge. Focus. Forward.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>O que fazemos</h4>
+          <a href="#solucoes">Implementação de IA</a>
+          <a href="#solucoes">Automação de processos</a>
+          <a href="#solucoes">Integração de sistemas</a>
+          <a href="#solucoes">Dashboards &amp; BI</a>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <a href="#parceria">Parceria</a>
+          <a href="#metodo">Método</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#" class="ph-link">LinkedIn <span class="ph">*</span></a>
+          <a href="#" class="ph-link">Instagram <span class="ph">*</span></a>
+          <a href="https://wa.me/5551993706131" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> FFuture.IA — Todos os direitos reservados.</p>
+      <p>Forge. Focus. Forward.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- ===================================================================
+       CHECKLIST DE PREENCHIMENTO — FFUTURE.IA (revise antes de publicar)
+       -------------------------------------------------------------------
+       [ ] DOMÍNIO ......... troque "ffuture.ia" no <head> (canonical, og:url,
+                            og:image, twitter:image).
+       [ ] OG-IMAGE ........ og-image.png (1200x630) já incluída; regenere se
+                            mudar a marca.
+       [ ] CONTATO ......... e-mail "contato@ffuture.ia" e WhatsApp
+                            "+55 51 99370-6131" são EXEMPLOS — confirme/edite
+                            na seção #contato.
+       [ ] REDES SOCIAIS ... os links de LinkedIn e Instagram no rodapé estão
+                            como "#"; coloque os reais.
+       [ ] TRUST STRIP ..... a faixa "Conecta-se aos canais..." usa nomes
+                            (WhatsApp, CRM, ERP...); troque por LOGOS reais.
+       [ ] PROVA SOCIAL .... ainda não há depoimentos/clientes reais; adicione
+                            quando tiver (ex.: nova seção de cases).
+       [ ] DEMO ............ a seção #demo é um slot 16:9; troque o placeholder
+                            por <video> / <img gif> / <iframe> (instruções
+                            comentadas na própria seção).
+       =================================================================== -->
+</body>
+</html>

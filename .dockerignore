@@ -1,0 +1,11 @@
+# Não enviar para a imagem Docker
+.git
+.gitignore
+.dockerignore
+Dockerfile
+README.md
+*.md
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
