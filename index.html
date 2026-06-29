@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>FFuture.IA</title>
+  <meta name="description" content="A FFuture.IA implementa automação, integrações e assistentes de IA sob medida na sua operação: menos trabalho manual, decisões com dados e tempo de volta para crescer." />
+  <meta name="author" content="FFuture.IA" />
+  <meta name="theme-color" content="#0a0b0d" />
+  <link rel="canonical" href="https://ffuture.ia/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="FFUTURE.IA — Automação e IA sob medida para a sua empresa" />
+  <meta property="og:description" content="Menos trabalho manual, decisões com dados e tempo de volta para crescer. Automação, integrações e IA sob medida." />
+  <meta property="og:site_name" content="FFuture.IA" />
+  <meta property="og:url" content="https://ffuture.ia/" />
+  <meta property="og:image" content="https://ffuture.ia/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FFUTURE.IA — Automação e IA sob medida para a sua empresa" />
+  <meta name="twitter:image" content="https://ffuture.ia/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+
+  <!-- tema aplicado ANTES de pintar (evita flash) -->
+  <script>
+    (function(){try{
+      var t=localStorage.getItem('ffuture-theme');
+      if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}
+      document.documentElement.setAttribute('data-theme',t);
+    }catch(e){document.documentElement.setAttribute('data-theme','dark');}})();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- ===== ABERTURA: 1) FFUTURE.IA  2) boot terminal ===== -->
+  <div class="intro" id="intro" role="status" aria-label="Abertura FFuture.IA">
+    <button class="intro__skip" id="introSkip" type="button">esc · pular</button>
+    <span class="intro__morph intro__morph--1" aria-hidden="true"></span>
+    <span class="intro__morph intro__morph--2" aria-hidden="true"></span>
+    <span class="intro__morph intro__morph--3" aria-hidden="true"></span>
+    <div class="intro__stage" aria-hidden="true">
+      <div class="intro__line">
+        <span class="intro__f">F</span><span class="intro__suffix" id="introSuffix"></span><span class="intro__ia" id="introIa">.IA</span>
+      </div>
+    </div>
+    <pre class="intro__boot" id="introBoot" aria-hidden="true"><span class="l">&gt; iniciando <b>ffuture.ia</b></span><span class="l">&gt; automação ....... <i>ok</i></span><span class="l">&gt; integrações ..... <i>ok</i></span><span class="l">&gt; IA ............... <i>ok</i></span><span class="l">&gt; pronto pra rodar <i>✓</i></span></pre>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <header class="bar" id="bar">
+    <div class="wrap bar__inner">
+      <a class="brand" href="#top" aria-label="FFuture.IA — topo">
+        <span class="brand__dot" aria-hidden="true"></span>
+        FFuture<span class="acc">.IA</span>
+      </a>
+      <nav class="nav" aria-label="Navegação">
+        <a href="#metodo">como funciona</a>
+        <a href="#solucoes">o que fazemos</a>
+        <a href="#parceria">por que escolher</a>
+      </nav>
+      <div class="bar__right">
+        <button class="theme" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <span class="theme__i" aria-hidden="true">☼</span>
+        </button>
+        <a class="bar__cta" href="#contato">[ forge 斧 ]</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== HERO ===== -->
+    <section class="hero wrap" id="top">
+      <p class="console reveal">
+        <span class="console__p">ffuture@ia:~$</span> <span id="typed" class="console__t"></span>
+      </p>
+      <h1 class="hero__h1 reveal">Menos trabalho manual,<br />mais tempo pra crescer.</h1>
+      <p class="hero__sub reveal">
+        A <strong>FFuture.IA</strong> implementa automação, integrações com assistentes de Inteligência Artificial
+        sob medida na sua operação. <strong>Na prática:</strong> você remove tarefas repetitivas das suas equipes, decide com dados
+        e ganha horas de volta — sem onerar sua equipe com tarefas que <strong>NÃO PRECISAM</strong> ser manuais.
+      </p>
+      <div class="hero__cta reveal">
+        <a class="btn btn--p" href="#contato">Falar com a gente →</a>
+        <a class="btn btn--g" href="#metodo">Entender como funciona ↓</a>
+      </div>
+
+      <dl class="kv reveal">
+        <div><dt>para quem</dt><dd>Empresas em crescimento</dd></div>
+        <div><dt>o que</dt><dd>Automação, integração e IA</dd></div>
+        <div><dt>como</dt><dd>Sob medida, sem pacote pronto</dd></div>
+      </dl>
+    </section>
+
+    <!-- ===== MARQUEE (ferramentas & parceiros como tags) ===== -->
+    <section class="strip" id="strip" aria-label="Ferramentas e parceiros">
+      <p class="strip__label wrap">// <strong>ferramentas</strong> que a gente <strong>conecta & Desenvolve</strong></p>
+      <!-- PREENCHER: troque/edite as tags abaixo. A faixa faz loop sem cortes e pausa no hover. -->
+      <div class="marq">
+        <div class="marq__track" id="marqTrack">
+          <ul class="marq__group">
+            <li><strong>IA</strong></li>
+            <li>Automação</li>
+            <li><strong>CRM</strong></li>
+            <li>Planilhas</li>
+            <li><strong>APIs</strong></li>
+            <li>Webhooks</li>
+            <li><strong>n8n</strong></li>
+            <li>WhatsApp</li>
+            <li><strong>Dashboards</strong></li>
+            <li>E-mail</li>
+            <li><strong>ERP/Sistemas</strong></li>
+            <li>LLMs</li>
+            <li><strong>TOTVS</strong></li>
+            <li>EduNext</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA (plano em 3 passos, foco no cliente) ===== -->
+    <section class="section wrap" id="metodo">
+      <header class="sec-head reveal">
+        <p class="sec-label">// como funciona</p>
+        <h2 class="sec-title">Da sua operação ao resultado, em três passos.</h2>
+        <p class="sec-sub">Sem promessa mágica: a gente entende o seu processo, constrói o que resolve com as ferramentas necessarias e o mais importante ficamos para acompanhar o resultado.</p>
+      </header>
+
+      <ol class="acts">
+        <li class="act tilt reveal">
+          <span class="act__tag">[ 01 · focus ]</span>
+          <h3 class="act__h">Focar onde você perde tempo operacional</h3>
+          <p class="act__d">Mapeamos a sua operação e identificamos os gargalos que mais custam tempo e dinheiro — e priorizamos o que dá retorno mais rápido, de acordo com a sua criticidade.</p>
+        </li>
+        <li class="act tilt reveal">
+          <span class="act__tag">[ 02 · forge ]</span>
+          <h3 class="act__h">Forjar/Construir a automação certa</h3>
+          <p class="act__d">Implementamos automações, integrações (CRM, ERP, planilhas, APIs) e assistentes de IA sob medida pro seu processo — não um pacote genérico.</p>
+        </li>
+        <li class="act tilt reveal">
+          <span class="act__tag">[ 03 · forward ]</span>
+          <h3 class="act__h">Avançar com acompanhamento</h3>
+          <p class="act__d">Monitoramos os resultados, ajustamos a rota quando necessário e seguimos evoluindo junto com o crescimento da sua empresa.</p>
+        </li>
+      </ol>
+
+      <p class="metodo__out reveal">
+        No fim, o que você sente é prático: <strong>menos tarefa repetitiva</strong>, processos que rodam sozinhos
+        e <strong>decisões com dados</strong> com base em dados reais com suporte de IA acompanhado.
+      </p>
+    </section>
+
+    <!-- ===== O QUE FAZEMOS ===== -->
+    <section class="section wrap incluso" id="solucoes">
+      <header class="sec-head reveal">
+        <p class="sec-label">// onde a gente entra</p>
+        <h2 class="sec-title">O que isso vira no seu dia a dia</h2>
+        <p class="sec-sub">Tudo conectado ao que você já usa, sob medida e feito pra durar.</p>
+      </header>
+
+      <ol class="num">
+        <li class="num__item reveal"><span class="num__i">01</span><div><h3>Assistentes de IA que executam</h3><p>Respondem clientes, organizam informação e tocam tarefas repetitivas no lugar do seu time.</p></div></li>
+        <li class="num__item reveal"><span class="num__i">02</span><div><h3>Automação de processos</h3><p>Do lead que chega ao relatório que sai — fluxos que rodam sozinhos, sem ninguém copiando e colando.</p></div></li>
+        <li class="num__item reveal"><span class="num__i">03</span><div><h3>Integração entre sistemas</h3><p>Seu CRM, ERP, planilhas e APIs conversando entre si. Os dados deixam de viver em ilhas.</p></div></li>
+        <li class="num__item reveal"><span class="num__i">04</span><div><h3>Dashboards &amp; relatórios</h3><p>Os números que importam num lugar só, atualizados sozinhos, pra você decidir rápido.</p></div></li>
+        <li class="num__item reveal"><span class="num__i">05</span><div><h3>Desenvolvimento sob medida</h3><p>Quando não existe ferramenta pronta pro seu problema, a gente constrói a sua.</p></div></li>
+        <li class="num__item reveal"><span class="num__i">06</span><div><h3>Adoção de IA com segurança</h3><p>Onde a IA ajuda de verdade (e onde não), no ritmo e nas regras da sua empresa.</p></div></li>
+        <li class="num__item reveal"><span class="num__i">07</span><div><h3>Acompanhamento contínuo</h3><p>A gente não entrega e some: monitora, ajusta e melhora ao longo do tempo.</p></div></li>
+        <li class="num__item reveal"><span class="num__i">08</span><div><h3>Time de tecnologia do seu lado</h3><p>O apoio de um time técnico sem o custo de montar um departamento interno.</p></div></li>
+      </ol>
+    </section>
+
+    <!-- ===== POR QUE A GENTE ===== -->
+    <section class="section wrap essencia" id="parceria">
+      <p class="sec-label reveal">// por que trabalhar com a gente</p>
+      <p class="big-quote reveal">
+        Tecnologia que resolve, do seu lado — não um fornecedor distante que <span class="acc">entrega e some</span>.
+      </p>
+      <p class="essencia__sub reveal">
+        Por isso a gente prioriza poucos projetos por vez: dá pra entender a fundo a sua operação,
+        entregar resultado de verdade e construir uma relação de longo prazo, com proximidade e <strong><a href="https://www.google.com/search?client=firefox-b-d&q=franqueza" target="_blank">franqueza</a></strong>... <br>
+        <strong>Em resumo...</strong> tem que fazer sentido para nós, <strong>muito antes de fazer sentido para você</strong>, ser um parceiro nosso.
+      </p>
+    </section>
+
+    <!-- ===== CONTATO / CTA ===== -->
+    <section class="section wrap contato" id="contato">
+      <div class="term reveal">
+        <div class="term__bar" aria-hidden="true">
+          <span class="term__dots"><i></i><i></i><i></i></span>
+          <span class="term__title">ffuture.ia — contato</span>
+        </div>
+        <div class="term__body">
+          <p class="term__line"><span class="console__p">ffuture@ia:~$</span> ./conversar --com=voce</p>
+          <h2 class="cta__h">Por fim, conte-me seu desafio. Que gente te mostra <span class="acc">onde dá pra começar.</span></h2>
+          <p class="cta__sub">O primeiro passo é um diagnóstico sem compromisso: olhamos a sua operação e apontamos onde automação e IA trazem retorno mais rápido.</p>
+          <!-- PREENCHER: número fica só no href (wa.me); confirme o número e o e-mail. -->
+          <a class="btn btn--p btn--lg" href="https://wa.me/5551993706131" target="_blank" rel="noopener">Falar no WhatsApp →</a>
+          <p class="cta__meta">contato@ffuture.ia <span class="sep">·</span> resposta no mesmo dia</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="foot wrap">
+    <div class="foot__top">
+      <a class="brand" href="#top">FFuture<span class="acc">.IA</span></a>
+      <nav class="foot__nav" aria-label="Rodapé">
+        <a href="#metodo">como funciona</a>
+        <a href="#solucoes">o que fazemos</a>
+        <a href="#parceria">por que a gente</a>
+        <a href="#contato">contato</a>
+      </nav>
+      <p class="foot__slogan">Forge. Focus. Forward.</p>
+    </div>
+    <div class="foot__bottom">
+      <span>© <span id="year">2026</span> FFuture.IA — todos os direitos reservados.</span>
+      <span class="foot__links"><a href="#" class="ph">LinkedIn</a> <span class="sep">·</span> <a href="#" class="ph">Instagram</a></span>
+    </div>
+  </footer>
+
+  <!-- typed.js (typewriter) — biblioteca leve (~10KB) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" defer></script>
+  <script src="script.js" defer></script>
+
+  <!-- ===================================================================
+       FFUTURE.IA v5 — "Terminal" + tema claro/escuro.
+       Abertura em 2 tempos (FFUTURE.IA → boot) com círculos de vidro ao fundo.
+       Cards do método em vidro + tilt no hover (desktop). Leve: CSS + typed.js.
+       PREENCHER: domínio (head), número wa.me, e-mail, redes do rodapé, tags da faixa.
+       =================================================================== -->
+</body>
+</html>
