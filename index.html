@@ -468,6 +468,22 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
+  (function(d,t) {
+    var BASE_URL="https://fmp-chatwoot.3wmyqq.easypanel.host";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: 'sLpN1Eir6hX7UBo5ct1xZDS7',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+  </script>
 
   <!-- ===================================================================
        CHECKLIST DE PREENCHIMENTO — FFUTURE.IA (revise antes de publicar)
